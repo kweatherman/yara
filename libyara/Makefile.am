@@ -83,6 +83,11 @@ endif
 # MODULES += modules/yourmodule.c
 #
 
+# KW:
+if AREA_MODULE
+MODULES += modules/area/area.c
+endif
+
 #
 # When bison is used in POSIX yacc emulation mode (-y/--yacc option) it
 # produces warnings if we use Bison-specific features that are not supported
