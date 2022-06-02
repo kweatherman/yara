@@ -18,4 +18,5 @@ This module allows for searching for a number of 32 or 64bit values within a sma
 ##### Build
 
 * Converted the "vs2017" Windows project to use Microsoft Visual Studio 2022.
+* Removed the following modules from the build since they not applicable for the IDA plugin design: *pe, elf, dotnet, cuckoo*, and *hash*.
 

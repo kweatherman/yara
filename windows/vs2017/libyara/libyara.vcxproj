@@ -115,7 +115,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;CUCKOO_MODULE;HASH_MODULE;DOTNET_MODULE;AREA_MODULE;HAVE_LIBCRYPTO;USE_WINDOWS_PROC;YR_BUILDING_STATIC_LIBC;YR_PROFILING_ENABLED</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;AREA_MODULE;USE_WINDOWS_PROC;YR_BUILDING_STATIC_LIBC;YR_PROFILING_ENABLED</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\..\libyara;..\..\..\libyara\include;..\..\..;..\packages\YARA.Jansson.x64.1.1.0\include;..\packages\YARA.OpenSSL.x64.1.1.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4005;4273;4090</DisableSpecificWarnings>
       <CompileAs>CompileAsC</CompileAs>
@@ -167,7 +167,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;CUCKOO_MODULE;HASH_MODULE;DOTNET_MODULE;AREA_MODULE;HAVE_LIBCRYPTO;USE_WINDOWS_PROC;YR_BUILDING_STATIC_LIB</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;AREA_MODULE;USE_WINDOWS_PROC;YR_BUILDING_STATIC_LIB</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\..\..\libyara;..\..\..\libyara\include;..\..\..;..\packages\YARA.Jansson.x64.1.1.0\include;..\packages\YARA.OpenSSL.x64.1.1.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4005;4273;4090</DisableSpecificWarnings>
       <CompileAs>CompileAsC</CompileAs>
@@ -239,15 +239,8 @@
     <ClCompile Include="..\..\..\libyara\modules.c" />
     <ClCompile Include="..\..\..\libyara\modules\area\area.c" />
     <ClCompile Include="..\..\..\libyara\modules\console\console.c" />
-    <ClCompile Include="..\..\..\libyara\modules\cuckoo\cuckoo.c" />
     <ClCompile Include="..\..\..\libyara\modules\dex\dex.c" />
-    <ClCompile Include="..\..\..\libyara\modules\dotnet\dotnet.c" />
-    <ClCompile Include="..\..\..\libyara\modules\elf\elf.c" />
-    <ClCompile Include="..\..\..\libyara\modules\hash\hash.c" />
     <ClCompile Include="..\..\..\libyara\modules\math\math.c" />
-    <ClCompile Include="..\..\..\libyara\modules\macho\macho.c" />
-    <ClCompile Include="..\..\..\libyara\modules\pe\pe.c" />
-    <ClCompile Include="..\..\..\libyara\modules\pe\pe_utils.c" />
     <ClCompile Include="..\..\..\libyara\modules\tests\tests.c" />
     <ClCompile Include="..\..\..\libyara\modules\time\time.c" />
     <ClCompile Include="..\..\..\libyara\notebook.c" />

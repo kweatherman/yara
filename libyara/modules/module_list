@@ -1,6 +1,7 @@
 MODULE(tests)
-MODULE(pe)
-MODULE(elf)
+// KW: Disable header modules, don't fit IDA plugin
+//MODULE(pe)
+//MODULE(elf)
 MODULE(math)
 MODULE(time)
 MODULE(console)
